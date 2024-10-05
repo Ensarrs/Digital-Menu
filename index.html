@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome - Menu Dixhitale</title>
+</head>
+<body>
+
+    <h1>Shfleto Menun</h1>
+    <p>Ketu eshte menuja juaj digjitale</p>
+
+    <select id="categorySelect">
+        <option value="none" selected disabled hidden>Zhgjedh</option>
+        <option value="all">Te gjitha</option>
+        <option value="pijetfresk">Pijet Freskuese</option>
+        <option value="desertet">Desertet</option>
+        <option value="pizza">Pizzat</option>
+        <option value="skara">Nga Skara</option>
+        <option value="about">Rreth Nesh</option>
+    </select>
+
+    <button onclick="filterMenu()">Shfleto Menun</button>
+
+    <div id="menu-gallery" class="menu-gallery"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
