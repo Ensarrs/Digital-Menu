@@ -35,40 +35,44 @@
         </div>
       </nav>
       <!--Main-->
-  <div class="main-homepage">
-    <section>
-      <div class="content">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Mirë se vini</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Në një restorant të shpejtë dhe modern, ky menu digjital ju informon për ofertat e fundit dhe pjatat më të shijshme që kemi për të ofruar. Nga specialitetet tradicionale tek pjatat e reja, menuja jonë ju sjell përvojën më të mirë në shije dhe cilësi. Zbuloni gatime që i përshtaten shijes suaj dhe shijoni momentin me një klikim.</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                <a href="articles.html" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                    Menu
-                </a>  
-            </div>
-        </div>
-      </div>
-    </section>
-  </div>  
-    <!--Footer-->
-    <footer class=" rounded-lg shadow m-4 dark:bg-gray-800">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html" class="hover:underline">DigitalMenu</a>. All Rights Reserved.
-        </span>
-        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-                <a class="footer-icon" href="https://www.instagram.com" target="_blank">
-                    <img src="images/instagram.svg" alt="">
-            </li>
-            <li>
-                <a class="footer-icon" href="https://www.twitter.com" target="_blank">
-                    <img src="images/twitter.svg" alt="">
-                </a>
-            </li>
-        </ul>
-        </div>
-    </footer>
+<div class="main1">
+    <h1 class="h1">Shfleto Menun</h1>
+    <p class="p">Ketu eshte menuja juaj digjitale</p>
+
+    <select id="categorySelect">
+        <option value="none" selected disabled hidden>Zhgjedh</option>
+        <option value="all">Te gjitha</option>
+        <option value="pijetfresk">Pijet Freskuese</option>
+        <option value="desertet">Desertet</option>
+        <option value="pizza">Pizzat</option>
+        <option value="skara">Nga Skara</option>
+        <option value="about">Rreth Nesh</option>
+    </select>
+
+    <button class="butoni" onclick="filterMenu()">Shfleto Menun</button>
     
+    <div id="menu-gallery" class="menu-gallery"></div>
+</div>
+<!--Footer-->
+<footer class=" rounded-lg shadow m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html" class="hover:underline">DigitalMenu</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a class="footer-icon" href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="">
+        </li>
+        <li>
+            <a class="footer-icon" href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.svg" alt="">
+            </a>
+        </li>
+    </ul>
+    </div>
+</footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
